@@ -1,14 +1,20 @@
 .field{
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 25rem;
+    height: 25rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.625rem;
     position: relative;
 }
 .cell{
-    width: 100px;
-    height: 100px;
-    border: 3px solid blue;
-    border-radius: 10px;
+    box-sizing: border-box;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 0.1875rem solid blue;
+    border-radius: 0.625rem;
     position: absolute;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
