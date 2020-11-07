@@ -1,21 +1,31 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/background.png); 
+}
+
 .field{
-    width: 25rem;
-    height: 25rem;
-    border: 0.0625rem solid black;
+    width: 800px;
+    height: 800px;
+    border: 10px solid black;
     border-radius: 0.625rem;
     position: relative;
 }
 .cell{
     box-sizing: border-box;
-    width: 6.25rem;
-    height: 6.25rem;
-    border: 0.1875rem solid blue;
+    width: 200px;
+    height: 200px;
+    border: 6px solid blue;
     border-radius: 0.625rem;
     position: absolute;
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: all 0.3s;
 }
+
