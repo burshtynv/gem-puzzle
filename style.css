@@ -7,21 +7,21 @@ body{
 }
 
 .field{
-    width: 800px;
-    height: 800px;
-    border: 10px solid black;
-    border-radius: 0.625rem;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
     position: relative;
 }
 .cell{
     box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    border: 6px solid blue;
-    border-radius: 0.625rem;
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    border-radius: 10px;
     position: absolute;
-    font-size: 6rem;
-    font-weight: 900;
+    font-size: 50px;
+
     display: flex;
     justify-content: center;
     align-items: center;
