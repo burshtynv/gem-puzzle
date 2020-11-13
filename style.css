@@ -28,4 +28,10 @@ body{
     cursor: pointer;
     transition: all 0.3s;
 }
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
