@@ -43,7 +43,7 @@ function move(index) {
 }
 
 const numbers = [...Array(15).keys()]
-//.sort(() => Math.random() - 0.5);
+.sort(() => Math.random() - 0.5);
 
 for (let i = 1; i <= 15; i++) {
     const cell = document.createElement('div');
@@ -69,5 +69,48 @@ for (let i = 1; i <= 15; i++) {
     cell.addEventListener('click', () => {
         move(i);
     })
+
+    let click = 0;
+
+    field.addEventListener('click', () =>{
+        click += 1;
+        document.getElementById("click").innerHTML = click;
+        
+    } )
+
+    // AUDIO
+    function setupSynth() {
+        window.synth = new Tone.Synth({
+          oscillator: {
+            type: 'sine',
+            modulationFrequency: 0.5
+          },
+          envelope: {
+            attack: 0,
+            decay: 0.2,
+            sustain: 0,
+            release: 0.5,
+          }
+        }).toMaster();
+      }
+       
+      function boopMe() {
+        if (!window.synth) {
+          setupSynth();
+        }
+        
+        window.synth.triggerAttackRelease(600, '9n');
+      }
+       
+      cell.addEventListener('touchstart', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        boopMe();
+      });
+      cell.addEventListener('mousedown', boopMe);
+
+   // Timer 
+
+   
 
 }

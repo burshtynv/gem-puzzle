@@ -3,7 +3,6 @@ body{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    background-image: url(img/background.png); 
 }
 
 .field{
@@ -12,7 +11,9 @@ body{
     border: 1px solid black;
     border-radius: 10px;
     position: relative;
+    z-index: 2;
 }
+
 .cell{
     box-sizing: border-box;
     width: 100px;
@@ -21,7 +22,6 @@ body{
     border-radius: 10px;
     position: absolute;
     font-size: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
